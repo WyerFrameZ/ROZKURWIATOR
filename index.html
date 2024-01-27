@@ -26,15 +26,37 @@
             ul{
                 color:MediumSeaGreen;
             }
-            body {
-                background-color: ;
-            }   
-            iframe {
-                
-            }
+         
         </style>
     </head>
     <body>
+	<script>
+       document.addEventListener("DOMContentLoaded", function () {
+        // Get the reference to the button with ID 'btn'
+        var btn = document.getElementById('btn');
+
+        // Assign the click event handler
+        btn.onclick = function () {
+            let p1 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16).toString(16));
+            let p2 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16)).toString(16);
+            let p3 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16).toString(16));
+
+            let kolor = "#" + p1 + p2 + p3;
+            kolorek.innerHTML = kolor.toUpperCase();
+            document.body.style.backgroundColor = kolor;
+
+            console.log(kolorek);
+        };
+
+            
+            
+  
+    })
+        
+	</script>
+
+
+
         <h1 id="spierdoleniec">SKLEP</h1>
         <a href="https://www.zsk.com">Najtaniej</a>
         <h2>Kubek</h2>
@@ -42,6 +64,7 @@
         <ul><button>KUP</button></ul>
         <ul><li><p>czarny</p></li></ul>
         <ul><button>KUP</button></ul>
+	
         <ul><li><p>zielony</p></li></ul>
         <ul><button>KUP</button></ul>
         
@@ -53,10 +76,19 @@
         <ul><li><p>plastikowy</p></li></ul>
         <ul><button>KUP</button></ul>
 <br>
+<p id="bonusrpk"></p>
+<br>
         <h1 id="huj">Moja ulubiona muzyka</h1>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2QRedhP5RmKJiJ1i8VgDGR?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4rJgzzfFHAVFhCSt2P4I3j?utm_source=generator" width="50%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<br>
         
-        
+        <h2 id="kiepul"2>CUSTOMUJ SE STRONKE</h2>
+	<ul><li>Wybierz</li></ul>
+
+    <ul><input type='button' id='btn' value="losuj kolor"/></ul>
+    	 <p id='kolorek'></p>
+    <ul><button onclick="document.body.style.backgroundColor = 'white';">Biały</button></ul>
+    <ul><button onclick="document.body.style.backgroundColor = '#393646';">Ciemny</button></ul>
     </body>
 </html>
