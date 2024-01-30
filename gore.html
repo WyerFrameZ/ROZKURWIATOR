@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GORE</title>
+    <style>
+        body{
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Ffehger%2Fstatus%2F1113656167316824065&psig=AOvVaw0b3GlCHm-sCogpxywM3CCx&ust=1706728898796000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNi15-PqhYQDFQAAAAAdAAAAABAj');
+            height: 100vh;
+            background-repeat : no-repeat;
+            background-size : contain;
+        }
+        h1{
+            color: steelblue;
+        }
+        #goryzator {
+              background-color: #04AA6D; /* Green */
+              border: none;
+              color: white;
+              padding: 10px 20px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 16px;
+              margin: 4px 2px;
+              cursor: pointer;
+              background-color: #f44336;
+            }
+        footer {
+                text-align: center;
+                padding: 5px;
+                background-color: #abbaba;
+                color: #000;
+                width: 100%;
+                height: 20px;
+                bottom: 0;
+                position: relative;
+            }
+        #k{
+            min-height: calc(100vh ); 
+            margin-bottom: -30px;
+            
+        }
+            
+    </style>
+</head>
+<body>
+    <div id="k">
+    <h1>Archiwum GORE</h1>
+    <H3>Wpisz hasło aby dostać dostęp do GORE Archiwum</H3>
+    <input type="text" id="textInput" placeholder="Wpisz">
+    <button onclick="checkPattern()">Sprawdź</button>
+    <div id="buttons" style="display: none;">
+        <h3>Wyszukaj sobie gore na YouTube</h3>
+        <button onclick="openYouTube()" id="goryzator">YouTube</button><br>
+        <h3>Najnowsze przeglądarka od google zapewnia darmowe i szybkie 24/7 wyszukiwanie gore! </h3>
+        <button onclick="openGoogle()" id="goryzator">Google</button>
+        <h3>Zaufane strony GORE</h3>
+        <button onclick="openseegore()" id="goryzator">SeeGore</button><br>
+        <button onclick="openlive()" id="goryzator">Kekma</button><br>
+        <button onclick="openkekma()" id="goryzator">LiveGore</button>
+       
+    </div>
+    </div>
+    <script>
+        function checkPattern() {
+            const regex = /^2137$/; // Wyrażenie regularne
+            const input = document.getElementById('textInput').value; // Pobiera wartość z pola tekstowego
+            const buttonsDiv = document.getElementById('buttons');
+
+            if (regex.test(input)) {
+                buttonsDiv.style.display = 'block'; // Wyświetla przyciski
+            } else {
+                alert('Nieprawidłowe hasło!');
+            }
+        }
+
+        function openYouTube() {
+            window.open("https://www.youtube.com/", "_blank"); // Otwiera YouTube w nowym oknie
+        }
+
+        function openGoogle() {
+            window.open("https://www.google.com/", "_blank"); // Otwiera Google w nowym oknie
+        }
+        function openseegore() {
+            window.open("https://www.seegore.com/", "_blank"); // Otwiera Google w nowym oknie
+        }
+        function openkekma() {
+            window.open("https://www.kekma.net/", "_blank"); // Otwiera Google w nowym oknie
+        }
+        function openlive() {
+            window.open("https://www.livegore.com/", "_blank"); // Otwiera Google w nowym oknie
+        }
+    </script>
+    <footer>
+        <small>
+            Copyright © 1997-2024 Gore resources archives. Gore Studio entertaiment.
+        </small>
+    </footer>
+</body>
+</html>
+
