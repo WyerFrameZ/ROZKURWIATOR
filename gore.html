@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GORE</title>
+    <title>Archiwum</title>
     <style>
         body{
             background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Ffehger%2Fstatus%2F1113656167316824065&psig=AOvVaw0b3GlCHm-sCogpxywM3CCx&ust=1706728898796000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCNi15-PqhYQDFQAAAAAdAAAAABAj');
@@ -13,7 +13,7 @@
             color: steelblue;
         }
         #goryzator {
-              background-color: #04AA6D; /* Green */
+              background-color: #04AA6D; 
               border: none;
               color: white;
               padding: 10px 20px;
@@ -40,6 +40,34 @@
             margin-bottom: -30px;
             
         }
+               .button-54 {
+          font-family: "Open Sans", sans-serif;
+          font-size: 16px;
+          letter-spacing: 2px;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #000;
+          cursor: pointer;
+          border: 3px solid;
+          padding: 0.25em 0.5em;
+          box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+          position: relative;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
             
     </style>
 </head>
@@ -48,7 +76,7 @@
     <h1>Archiwum GORE</h1>
     <H3>Wpisz hasło aby dostać dostęp do GORE Archiwum</H3>
     <input type="text" id="textInput" placeholder="Wpisz">
-    <button onclick="checkPattern()">Sprawdź</button>
+    <button onclick="checkPattern()" class="button-54">Sprawdź</button>
     <div id="buttons" style="display: none;">
         <h3>Wyszukaj sobie gore na YouTube</h3>
         <button onclick="openYouTube()" id="goryzator">YouTube</button><br>
@@ -63,32 +91,32 @@
     </div>
     <script>
         function checkPattern() {
-            const regex = /^2137$/; // Wyrażenie regularne
-            const input = document.getElementById('textInput').value; // Pobiera wartość z pola tekstowego
+            const regex = /^2137$/; 
+            const input = document.getElementById('textInput').value; //pou
             const buttonsDiv = document.getElementById('buttons');
 
             if (regex.test(input)) {
-                buttonsDiv.style.display = 'block'; // Wyświetla przyciski
+                buttonsDiv.style.display = 'block'; 
             } else {
-                alert('Nieprawidłowe hasło!');
+                alert('Nieprawidłowe hasło!');   //gore alerto
             }
         }
 
         function openYouTube() {
-            window.open("https://www.youtube.com/", "_blank"); // Otwiera YouTube w nowym oknie
+            window.open("https://www.youtube.com/", "_blank"); 
         }
 
         function openGoogle() {
-            window.open("https://www.google.com/", "_blank"); // Otwiera Google w nowym oknie
+            window.open("https://www.google.com/", "_blank"); 
         }
         function openseegore() {
-            window.open("https://www.seegore.com/", "_blank"); // Otwiera Google w nowym oknie
+            window.open("https://www.seegore.com/", "_blank"); 
         }
         function openkekma() {
-            window.open("https://www.kekma.net/", "_blank"); // Otwiera Google w nowym oknie
+            window.open("https://www.kekma.net/", "_blank"); 
         }
         function openlive() {
-            window.open("https://www.livegore.com/", "_blank"); // Otwiera Google w nowym oknie
+            window.open("https://www.livegore.com/", "_blank"); 
         }
     </script>
     <footer>
@@ -98,4 +126,3 @@
     </footer>
 </body>
 </html>
-
