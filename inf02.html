@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INF 0.2 </title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  #content {
+    margin-left: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .scroll {
+    height: 2000px; /* dłuższy tekst */
+  }
+</style>
+</head>
+<body>
+
+<div id="sidebar">
+  <h2>Sekcje</h2>
+  <button>WiFi</button><br>
+  <button onclick="changeBackground()">Zmień tło</button>
+</div>
+
+<div id="content">
+  
+  <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Standardy Wi-Fi</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .wifi-standard {
+    margin-bottom: 30px;
+  }
+  .wifi-standard h2 {
+    margin-bottom: 10px;
+  }
+  .wifi-standard p {
+    margin-bottom: 5px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Standardy Wi-Fi</h1>
+
+<div class="wifi-standard">
+  <h2>802.11</h2>
+  <p>Przepustowość: do 2 Mb/s</p>
+  <p>Maksymalny zasięg: 20 metrów w budynkach</p>
+  <p>Częstotliwość: 2,4 GHz</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 b</h2>
+  <p>Przepustowość: do 11 Mb/s</p>
+  <p>Maksymalny zasięg: 47 metrów w pomieszczeniach, 98 metrów na wolnej przestrzeni</p>
+  <p>Liczba obsługiwanych kanałów: 13</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 a</h2>
+  <p>Przepustowość: do 54 Mb/s</p>
+  <p>Zasięg: znacznie słabszy niż 802.11 b</p>
+  <p>Pobór energii: wysoki</p>
+  <p>Częstotliwość: 5 GHz</p>
+  <p>Liczba obsługiwanych kanałów: 12</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 g</h2>
+  <p>Przepustowość: 54 Mb/s</p>
+  <p>Zasięg: do 50 metrów w pomieszczeniach, 100 metrów na wolnym terenie</p>
+  <p>Liczba obsługiwanych kanałów: 14</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 n</h2>
+  <p>Przepustowość: do 600 Mb/s</p>
+  <p>Szerokość kanałów: 20 MHz i 40 MHz</p>
+  <p>Maksymalny zasięg: wiele kilometrów</p>
+  <p>Częstotliwość: 2,4 GHz i 5 GHz</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 ac</h2>
+  <p>Przepustowość: do 7 Gb/s</p>
+  <p>Zasięg: wiele kilometrów</p>
+  <p>Szerokość obsługiwanych kanałów: 20 MHz, 40 MHz, 80 MHz lub 160 MHz</p>
+  <p>Częstotliwość: 5 GHz</p>
+  <p>Obsługiwana technologia MU-MIM</p>
+</div>
+
+<div class="wifi-standard">
+  <h2>802.11 ax</h2>
+  <p>Przepustowość: do 600 Mb/s</p>
+  <p>Częstotliwości: 2,4 GHz, 5 GHz</p>
+  <p>Zasięg: wiele kilometrów</p>
+  <p>Obsługiwana technologia OFDMA</p>
+</div>
+
+</body>
+</div>
+    
+
+<script>
+  function changeBackground() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+</body>
+</html>
